@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "strict": true,
+    "sourceMap": true,
+    "module": "commonjs",
+    "target": "esnext",
+    "lib": ["dom", "es2017"],
+    "jsx": "react",
+    "moduleResolution": "node",
+    "esModuleInterop": true
+  },
+  "include": ["client","imports", "server", "*.js"]
+}
