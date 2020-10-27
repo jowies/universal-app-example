@@ -1,11 +1,16 @@
 import React from 'react';
+import { Provider } from 'react-redux';
+import ContactList from './components/ContactList';
+import Form from './components/Form';
+import store from './store';
 
-interface Props {
-  runtime: string;
-}
-
-const App: React.FC<Props> = ({ runtime }) => {
-  return <div>Dette kjører {runtime}</div>;
+const App: React.FC = () => {
+  return (
+    <Provider store={store}>
+      <ContactList></ContactList>
+      <Form></Form>
+    </Provider>
+  );
 };
 
 export default App;
