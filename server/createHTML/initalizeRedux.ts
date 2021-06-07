@@ -13,9 +13,7 @@ const initializeReduxState = async (
   }
   const withString = contactsFromDB.map(objectIdToString);
 
-  const initialState = { contact: { contacts: withString } };
-
-  return initialState;
+  return { contact: { contacts: withString } };
 };
 
 export { initializeReduxState };
